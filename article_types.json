@@ -1,0 +1,22 @@
+[
+    {
+        "name": "macro", 
+        "description": "Artigos sobre cenário macroeconômico e ciclos de mercado e governo"
+    },
+    {
+        "name": "portfolio",
+        "description": "Artigos sobre carteiras recomendadas e desempenho de ativos"
+    },
+    {
+        "name": "fundamental_analysis",
+        "description": "Artigos relacionados a análise fundamentalista"
+    },
+    {
+        "name": "technical_analysis",
+        "description": "Artigos relacionados a análise técnica"
+    },
+    {
+        "name": "strategy",
+        "description": "Artigos relacionados a estratégia de alocação e construção de riqueza"
+    }
+]
