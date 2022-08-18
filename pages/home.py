@@ -1,9 +1,8 @@
 from fastapi.responses import HTMLResponse
-# , StreamingResponse
-import utils as utils
+import utils.text_reader as text_reader
 
 def get_home_page_html():
-    return HTMLResponse(content=utils.get_html_content("index.html"), status_code=200)
+    return HTMLResponse(content=text_reader.get_html_content("pages/index.html"), status_code=200)
 
 # def get_aula_1():
 #     def iterfile():
