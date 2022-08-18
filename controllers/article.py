@@ -4,7 +4,7 @@ from models.article import Article
 articles_list = []
 
 def get_list():
-    with open('articles.json', 'r') as articles_file:
+    with open('data/articles.json', 'r') as articles_file:
         json_file = json.load(articles_file)
     
     return json_file

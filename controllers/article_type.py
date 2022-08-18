@@ -3,7 +3,7 @@ from typing import Union
 import json
 
 def get_list():
-    with open('article_types.json', 'r') as types_file:
+    with open('data/article_types.json', 'r') as types_file:
         json_file = json.load(types_file)
     
     return json_file

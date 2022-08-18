@@ -6,10 +6,7 @@ from fastapi.responses import HTMLResponse, StreamingResponse
 from models.article import Article
 from controllers import article_type, article
 from pydantic import BaseModel
-
-
-#  Pages
-import home as home
+from pages import home
 
 app = FastAPI()
 
@@ -43,11 +40,3 @@ def get_article(id: int = 0, type: str = None):
 @app.get("/home", response_class=HTMLResponse)
 async def get_root_page():
     return home.get_home_page_html()
-
-@app.get("/aula1")
-def get_aula_1():
-    def iterfile():
-        with open("aula1.mp4", mode="rb") as file_like:
-            yield from file_like
-    
-    return StreamingResponse(iterfile(), media_type="video/mp4")
